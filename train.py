@@ -19,7 +19,7 @@ ratings = pd.read_csv("C:\\Users\\Vamsi\\OneDrive\\Documents\\movie-recommender\
 
 print("Building Content-Based model...")
 
-movies['genres'] = movies['genres'].str.replace('|', ' ')
+movies['genres'] = movies['genres'].str.replace('|', ', ')
 movies['genres'] = movies['genres'].fillna('')
 
 tfidf = TfidfVectorizer(stop_words='english')
