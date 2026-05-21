@@ -3,6 +3,10 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import streamlit as st
+
+st.title("Movie Recommender System")
+st.write("App Started Successfully")
 
 # Load dataset
 movies = pd.read_csv("data/movies.csv")
